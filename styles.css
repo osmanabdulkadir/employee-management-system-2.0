@@ -34,7 +34,7 @@ html{
 
     #nav-bar{
         display: flex;
-        width: 100%;
+        width: 100vw;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
@@ -99,6 +99,7 @@ html{
         border: 1px solid white;
         border-radius: 0.75rem;
         margin-top: 5rem;
+        
     }
     #name{
         font-size: 2rem;
@@ -114,7 +115,7 @@ html{
 
     #profile-picture{
         position: relative;
-        margin-left: 16rem;
+        margin-left: 19rem;
         margin-top: -4rem;
         width: 5rem;
         height: 5rem;
@@ -178,6 +179,7 @@ html{
         background-color: red;
         border: 1px solid red;
         border-radius: 100px;
+        margin-top: -1rem;
         width: fit-content;
         padding: .6rem;
     }
@@ -388,6 +390,9 @@ html{
 
 
 @media screen and (min-width: 1100px) {
+    body{
+        background-color: var(--clr-primary-200);
+    }
     nav{
         position: fixed;
         left: 0;
@@ -417,7 +422,7 @@ html{
         display: flex;
         width: 95vw;
         margin: 0 10rem;
-        overflow: hidden;
+        
         flex-direction: column;
         flex-flow: column;
         
@@ -429,7 +434,7 @@ html{
         position: relative;
         margin-top: 1rem;
         margin-left: 1rem;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 700;
     }
 
@@ -470,47 +475,49 @@ html{
 
     #profile{
         background-color: var(--clr-secondary-200);
-        border: 1px solid white;
-        wid
+        border: 1px solid black;
+        width: 36rem;
+        height: 45rem;
         border-radius: 0.75rem;
         margin-top: 2rem;
+        margin-left: 2rem;
     }
     #name{
-        font-size: 5rem;
+        font-size: 2rem;
         font-weight: 600;
         margin-top: 2rem;
         margin-left: 1rem;
     }
 
     #email{
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-left: 1rem;
     }
 
     #profile-picture{
         position: relative;
-        margin-left: 40rem;
-        margin-top: -7rem;
-        width: 10rem;
-        height: 10rem;
+        margin-left: 27rem;
+        margin-top: -6rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 100px;
     }
     
 
     #salary{
         color: gray;
-       margin-top: 5rem;
-       font-size: 2rem;
-        margin-left: 1rem;
+       margin-top: 2rem;
+       font-size: 1.4rem;
+        margin-left: 2rem;
         word-spacing: 10rem;
         
     }
 
     #Growth{
         margin-left: 2rem;
-        margin-top: 4rem;
-        font-size: 2rem;
-        word-spacing: 30rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        word-spacing: 20rem;
 
     }
     #graph{
@@ -520,27 +527,36 @@ html{
 
     }
     #graph-img{
-        margin-top: 1rem;
-        width: 40rem;
-        height: 30rem;
+        margin-top: .6rem;
+        margin-left: 2rem;
+        width: 15rem;
+        height: 15rem;
 
     }
     #radar-chart-div{
-        margin-top: 2rem;
+        
     }
     #radar-chart{
-        margin: 0rem 1rem;
-        width: 40rem;
-        height: 30rem;
+        margin: 0rem 2rem;
+        width: 10rem;
+        height: 10rem;
     }
     
 
     .widget{
-        background-color: var(--clr-secondary-200);
-        margin: 5rem 1rem;
+        position: relative;
+        display: flex;
         
-        font-size: 2rem;
-        padding: 2rem;
+        grid-template-rows: inherit;
+        width: 22rem;
+        height: 15rem;
+        justify-content: baseline;
+        flex-direction: row;
+        row-gap: 1rem;
+        background-color: var(--clr-secondary-200);
+        
+        font-size: 1.5rem;
+        padding: 1rem;
         border: 1px solid black;
         border-radius: 2rem;
     }
@@ -561,7 +577,7 @@ html{
 
 
     #calander{
-        width: 100%;
+        width: 40rem;
         height: 100%;
         margin-top: 3rem;
         border: 1px solid gray;
@@ -571,6 +587,9 @@ html{
     }
 
     .calander{
+        position: relative;
+        margin-left: 45rem;
+        margin-top: 50rem;
         width: 90%;
         height: 40rem;
     }
