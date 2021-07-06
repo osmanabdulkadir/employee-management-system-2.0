@@ -18,7 +18,7 @@ html{
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 480px){
 
     nav{
         position: fixed;
@@ -34,7 +34,7 @@ html{
 
     #nav-bar{
         display: flex;
-        width: 100vw;
+        width: 90vw;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
@@ -45,7 +45,7 @@ html{
 
     #wrapper{
         display: flex;
-        width: 90vw;
+        width: 80vw;
         margin: 0 1.5rem;
         overflow: hidden;
         flex-direction: column;
@@ -57,31 +57,34 @@ html{
 
     #overview{
         position: relative;
-        margin-top: 5rem;
-        font-size: 4rem;
+        margin-top: 6rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 
     #menu{
         position: relative;
-        margin-top: 1rem;
-        float: i;
+        margin-top: 2rem;
+        
     }
     #comment{
         position: relative;
-        margin-top: -2rem;
-        margin-left: 22rem;
+        margin-top: 1rem;
+        margin-left: 9.22rem;
+        visibility: hidden;
         
     }
     #bell{
         position: relative;
-        margin-top: -1rem;
-        margin-left: 19rem;
+        margin-top: -3rem;
+        margin-left: 9rem;
+        margin-right: 10rem;
+        visibility: hidden;
     }
 
     #search{
         position: relative;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         font-size: 1.5rem;
     }
 
@@ -90,32 +93,37 @@ html{
         position: relative;
         margin-top: -2rem;
         margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 1rem;
 
     }
 
     #profile{
+        min-width: fit-content;
         background-color: var(--clr-secondary-200);
         border: 1px solid white;
         border-radius: 0.75rem;
-        margin-top: 5rem;
+        margin: 2rem .5rem;
+        width: 25rem;
         
     }
     #name{
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 600;
         margin-top: 2rem;
         margin-left: 1rem;
     }
 
     #email{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 1rem;
+        margin-right: 2rem;
+        margin-bottom:1rem;
     }
 
     #profile-picture{
         position: relative;
-        margin-left: 19rem;
+        margin-left: 15rem;
+        margin-right: 1rem;
         margin-top: -4rem;
         width: 5rem;
         height: 5rem;
@@ -125,10 +133,10 @@ html{
 
     #salary{
         color: gray;
-       margin-top: 5rem;
-       font-size: 1.5rem;
+       margin-top: 1rem;
+       font-size: 1rem;
         margin-left: 1rem;
-        word-spacing: 4rem;
+        word-spacing: 3rem;
         
     }
 
@@ -145,8 +153,8 @@ html{
     }
     #graph-img{
         margin-top: 1rem;
-        width: 21rem;
-        height: 15rem;
+        width: 70vw;
+        height: 10rem;
 
     }
     #radar-chart-div{
@@ -154,24 +162,29 @@ html{
     }
     #radar-chart{
         margin: 0rem 1rem;
-        width: 21rem;
-        height: 15rem;
+        width: 70vw;
+        height: 10rem;
     }
     
 
     .widget{
         background-color: var(--clr-secondary-200);
-        margin: 5rem 1rem;
-        
+        margin-top: 1rem;
+        margin-left: 1rem;
+        height: 14rem;
+        width: 70vw;
         font-size: 2rem;
-        padding: 2rem;
+        padding: 3rem;
         border: 1px solid black;
         border-radius: 2rem;
+        overflow: hidden;
     }
+    
 
     .mini-profile-pic{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
+        margin-top: 1rem;
         border: 1px solid black;
         border-radius: 2rem;
     }
@@ -179,14 +192,42 @@ html{
         background-color: red;
         border: 1px solid red;
         border-radius: 100px;
-        margin-top: -1rem;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: -2rem;
+        margin-left: -2rem;
         width: fit-content;
-        padding: .6rem;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .Completion-rate{
+        margin-top: 1rem;
+    }
+    .percent{
+        
+        margin-bottom: 1rem;
+    }
+
+    #title-3{
+        position: relative;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    #subheader{
+        font-size: 1rem;
+        color: gray;
+        margin-left: 2rem;
+    }
+    #dots{
+        position: relative;
+        margin-top: -1rem;
     }
 
 
     #calander{
-        width: 100%;
+        width: 20rem;
         height: 100%;
         margin-top: 3rem;
         border: 1px solid gray;
@@ -368,6 +409,8 @@ html{
         border-radius: 100px;
         width: fit-content;
         padding: .6rem;
+        margin-top: .5rem;
+        margin-left: .1rem;
     }
 
 
@@ -421,7 +464,7 @@ html{
     #wrapper{
         display: flex;
         width: 95vw;
-        margin: 0 10rem;
+        margin: 1rem 12rem;
         
         flex-direction: column;
         flex-flow: column;
@@ -437,6 +480,12 @@ html{
         font-size: 4rem;
         font-weight: 700;
     }
+    
+    #teams{
+        margin-left: 19rem;
+        margin-top: -2rem;
+        margin-right: 0;
+    }
 
     #menu{
         position: relative;
@@ -447,19 +496,19 @@ html{
         position: relative;
         font-size: 2rem;
         margin-top: -2rem;
-        margin-left: 60rem;
+        margin-left: 80rem;
         
     }
     #bell{
         position: relative;
         font-size: 2rem;
         margin-top: -2rem;
-        margin-left: 65rem;
+        margin-left: 85rem;
     }
 
     #search{
         position: relative;
-        margin-top: -4rem;
+        margin-top: -2rem;
         margin-left: 40rem;
         font-size: 1.5rem;
     }
@@ -476,7 +525,7 @@ html{
     #profile{
         background-color: var(--clr-secondary-200);
         border: 1px solid black;
-        width: 36rem;
+        width: 10rem;
         height: 45rem;
         border-radius: 0.75rem;
         margin-top: 2rem;
@@ -497,7 +546,8 @@ html{
     #profile-picture{
         position: relative;
         margin-left: 27rem;
-        margin-top: -6rem;
+        margin-top: -5rem;
+        margin-right: 2rem;
         width: 8rem;
         height: 8rem;
         border-radius: 100px;
@@ -529,30 +579,36 @@ html{
     #graph-img{
         margin-top: .6rem;
         margin-left: 2rem;
-        width: 15rem;
+        width: 30rem;
         height: 15rem;
 
     }
     #radar-chart-div{
+        width: fit-content;
+        overflow: hidden;
         
     }
     #radar-chart{
-        margin: 0rem 2rem;
-        width: 10rem;
+        margin-left: 1rem;
+        margin-bottom: -1rem;
+        width: 30rem;
         height: 10rem;
+        overflow: hidden;
     }
     
 
     .widget{
-        position: relative;
+        position: absolute;
         display: flex;
+        margin-left: 40rem;
+        margin-top: -45rem;
         
         grid-template-rows: inherit;
-        width: 22rem;
+        width: 15rem;
         height: 15rem;
         justify-content: baseline;
         flex-direction: row;
-        row-gap: 1rem;
+        row-gap: 10rem;
         background-color: var(--clr-secondary-200);
         
         font-size: 1.5rem;
@@ -561,37 +617,91 @@ html{
         border-radius: 2rem;
     }
 
+    #widget1{
+        margin-top: -45rem;
+        margin-left: 38rem;
+    }
+
+    #widget2{
+        margin-top: -45rem;
+        margin-left: 54rem;
+    }
+
+    #widget3{
+        margin-top: -45rem;
+        margin-left: 70rem;
+        width: 20rem;
+        
+    }
+    .Completion-rate{
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        text-align: left;
+        margin-top: 0rem;
+        margin-left: 1rem;
+        font-weight: 700;
+    
+    }
+    .percent{
+        margin-top: 10rem;
+        margin-left: -3rem;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+
+    }
+    #title-3{
+        margin-top: 2rem;
+        width: fit-content;
+        
+    }
+    #subheader{
+        color: gray;
+        font-size: 1rem ;
+        margin-top: 5rem;
+        margin-left: -3rem;
+    }
+    #dots{
+        position: relative;
+        margin-left: 7rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: black;
+
+    }
+
+    
+
     .mini-profile-pic{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2rem;
+        width: 2rem;
         border: 1px solid black;
-        border-radius: 2rem;
+        border-radius: 1rem;
+        margin-top: 10rem;
+        margin-left: -4.5rem;
     }
     .widget-icon{
         background-color: red;
         border: 1px solid red;
+        margin-top: .5rem;
+        margin-left: .5rem;
         border-radius: 100px;
         width: fit-content;
+        height: fit-content;
         padding: .6rem;
     }
 
 
-    #calander{
-        width: 40rem;
-        height: 100%;
-        margin-top: 3rem;
-        border: 1px solid gray;
-        border-radius: 2rem;
-        padding: .6rem;
-        margin-bottom: 3rem;
-    }
 
     .calander{
-        position: relative;
-        margin-left: 45rem;
-        margin-top: 50rem;
-        width: 90%;
-        height: 40rem;
+        position: absolute;
+        margin-left: 37rem;
+        margin-top: -32rem;
+        margin-right: 10rem;
+        width: 53rem;
+        height: 28.5rem;
+        border: 1px solid black;
+        border-radius: 2rem;
     }
 
     
